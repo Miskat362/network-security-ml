@@ -6,7 +6,6 @@ certifi
 pymongo[srv]
 dnspython
 scikit-learn
-dill
 pyaml
 
 #-e .
