@@ -35,9 +35,9 @@ if __name__=='__main__':
         print(dataTransformationArtifact)
 
         logging.info("Model Training Stared")
-        model_trainer_config = ModelTrainerConfig(trainingPipelineConfig)
-        model_trainer = ModelTrainer(model_trainer_config=model_trainer_config,data_transformation_artifact=dataTransformationArtifact)
-        model_trainer_artifact = model_trainer.initiate_model_trainer()
+        modelTrainerConfig = ModelTrainerConfig(trainingPipelineConfig)
+        model_trainer = ModelTrainer(model_trainer_config=modelTrainerConfig,data_transformation_artifact=dataTransformationArtifact)
+        modelTrainerArtifact = model_trainer.initiate_model_trainer()
         logging.info("Model Training artifact created")
 
     except Exception as e:
